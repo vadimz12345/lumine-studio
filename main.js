@@ -1,16 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. МОБИЛЬНОЕ МЕНЮ
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const mobileNav = document.getElementById('mobileNav');
-
-    if (mobileToggle && mobileNav) {
-        mobileToggle.addEventListener('click', () => {
-            mobileNav.classList.toggle('active');
-        });
-    }
-
-    // 2. ФИЛЬТРАЦИЯ ПОРТФОЛИО (для страницы portfolio.html)
+    
+    //  ФИЛЬТРАЦИЯ ПОРТФОЛИО (для страницы portfolio.html)
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projects = document.querySelectorAll('.project-item');
 
@@ -37,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. АККОРДЕОН FAQ И ВКЛАДКИ КАТЕГОРИЙ (для страницы faq.html)
+    //  АККОРДЕОН FAQ И ВКЛАДКИ КАТЕГОРИЙ (для страницы faq.html)
     const tabs = document.querySelectorAll('.faq-tab');
     const categories = document.querySelectorAll('.faq-category');
     const questions = document.querySelectorAll('.faq-question');
